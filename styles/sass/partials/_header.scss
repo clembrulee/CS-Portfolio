@@ -1,0 +1,24 @@
+.side-header{
+	background-color: #111418;
+	height: 100vh;
+	right:auto;
+	width:280px;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.side-header li{
+	display: block;
+}
+
+.side-header a{
+	padding: 10px 0;
+}
+
+.navbar{
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+}
