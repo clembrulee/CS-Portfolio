@@ -1,5 +1,25 @@
+.skills{
+	height: 100vh;
+}
+
 .skills-grid{ 
 	display:grid;
 	grid-template-columns: repeat(4,1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr );
+	gap: 2.5rem;
+	
+}
+
+.skills li{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #6610f2;
+	border-radius: 15%;
+}
+
+.skills i{
+	font-size: 4rem;
+	padding: 2rem 0;
 }

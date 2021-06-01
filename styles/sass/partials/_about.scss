@@ -1,0 +1,23 @@
+.about{
+	height:100vh;
+}
+
+.about-wrapper{
+	display:flex;
+}
+
+.about img{
+	// border-radius: 50%;
+	flex-basis: 40%;
+	width:100%
+}
+
+.about span{
+	font-size: 4rem;
+	color: #6610f2;
+	line-height: 1;
+}
+
+.about p{
+	line-height: 2.2;
+}
