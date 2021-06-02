@@ -1,4 +1,4 @@
-.side-header{
+.sideHeader{
 	background-color: #111418;
 	height: 100vh;
 	right:auto;
@@ -9,20 +9,20 @@
 	border-right:3px solid #6610f2;
 }
 
-.side-header li{
+.sideHeader li{
 	display: block;
 }
 
-.side-header a{
+.sideHeader a{
 	padding: 10px 0;
 	margin: 10px auto;
 	text-align: center;
 	display: inline-block;
 }
 
-.side-header a:active,
-.side-header a:focus,
-.side-header a:hover{
+.sideHeader a:active,
+.sideHeader a:focus,
+.sideHeader a:hover{
 	color: #6610f2;
 }
 
@@ -33,6 +33,7 @@
 	align-items: center;
 }
 
-.logo{
+.sideHeader .logo{
 	font-size:2rem;
+	margin-top: 4rem;
 }

@@ -221,7 +221,7 @@ html {
           box-sizing: inherit;
 }
 
-.sr-only {
+.srOnly {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -235,11 +235,27 @@ html {
   overflow: hidden;
 }
 
+html {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #111418;
   color: #eff0f0;
   font-family: 'Poppins', sans-serif;
   font-size: 125%;
+}
+
+.contentWrapper {
+  margin-left: 280px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 80%;
 }
 
 a {
@@ -269,7 +285,7 @@ h2 {
   display: inline-block;
 }
 
-.side-header {
+.sideHeader {
   background-color: #111418;
   height: 100vh;
   right: auto;
@@ -280,20 +296,20 @@ h2 {
   border-right: 3px solid #6610f2;
 }
 
-.side-header li {
+.sideHeader li {
   display: block;
 }
 
-.side-header a {
+.sideHeader a {
   padding: 10px 0;
   margin: 10px auto;
   text-align: center;
   display: inline-block;
 }
 
-.side-header a:active,
-.side-header a:focus,
-.side-header a:hover {
+.sideHeader a:active,
+.sideHeader a:focus,
+.sideHeader a:hover {
   color: #6610f2;
 }
 
@@ -313,8 +329,9 @@ h2 {
           align-items: center;
 }
 
-.logo {
+.sideHeader .logo {
   font-size: 2rem;
+  margin-top: 4rem;
 }
 
 .hero {
@@ -322,15 +339,16 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  text-align: center;
 }
 
-.hero-overlay {
+.heroOverlay {
   background-color: #000;
   opacity: 0.7;
   height: 100%;
 }
 
-.hero-wrapper {
+.heroWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,16 +366,28 @@ h2 {
 }
 
 .about {
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.about-wrapper {
+.aboutWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutContentContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .about img {
+  border: 5px solid #6610f2;
+  border-radius: 50%;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   width: 100%;
@@ -371,13 +401,24 @@ h2 {
 
 .about p {
   line-height: 2.2;
+  padding: 0 3rem;
 }
 
-.projects-grid {
+.about a {
+  background-color: #6610f2;
+  margin-left: 3rem;
+  padding: 10px 50px;
+}
+
+.projects {
+  min-height: 100vh;
+}
+
+.projectsGrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -390,7 +431,7 @@ h2 {
   height: 100vh;
 }
 
-.skills-grid {
+.skillsGrid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -423,20 +464,61 @@ h2 {
   padding: 2rem 0;
 }
 
-.contact-form {
+.contactForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 5px solid #6610f2;
+  border-radius: 50px;
+  width: 65%;
 }
 
 input[type="text"],
-input[type="email"] {
-  margin: 2rem 0;
+input[type="email"],
+textarea {
+  margin: 1.5rem;
   padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #6610f2;
+}
+
+.formName,
+.formEmail {
+  width: calc(50% - 6rem);
+  display: inline-block;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+textarea {
+  resize: none;
+}
+
+.submit-button {
+  display: block;
+  color: #eff0f0;
+  margin: 0 auto;
+  width: 50%;
+  background-color: #6610f2;
+  border: none;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background: #6610f2;
+  opacity: 0.8;
 }
 
 footer div {
@@ -444,16 +526,9 @@ footer div {
   text-align: center;
 }
 
-.content-wrapper {
-  margin-left: 280px;
-}
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 80%;
-}
-
-.hero {
-  text-align: center;
+@media (max-width: 1100px) {
+  .side-header {
+    position: -webkit-sticky;
+    position: sticky;
+  }
 }

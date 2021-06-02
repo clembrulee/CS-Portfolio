@@ -16,14 +16,14 @@
 </head>
 
 <body>
-	<div class="content-wrapper">
-		<header class="sticky-top">
+	<div class="contentWrapper">
+		<header class="stickyTop">
 			<!-- ===================Navigation Section====================== -->
-			<div class="side-header">
+			<div class="sideHeader">
 				<section class="navbar">
 					<a href="/index.html" class="logo">Clement Sung</a>
 					<nav>
-						<ul>
+						<ul id="nav-links">
 							<li><a href="#home">Home</a></li>
 							<li><a href="#about">About</a></li>
 							<li><a href="#projects">Projects</a></li>
@@ -37,27 +37,31 @@
 		<main>
 			<!-- =====================Home Section==================== -->
 			<section class="home hero" id="home">
-				<div class="hero-overlay">
-					<div class="wrapper hero-wrapper">
+				<div class="heroOverlay">
+					<div class="wrapper heroWrapper">
 						<h1>Clement Sung</h1>
 						<h2>Front-End Developer</h2>
 					</div>
 				</div>
 			</section>
+			<!-- ========================About Section============================ -->
 			<section class="about" id="about">
-				<div class="wrapper about-wrapper">
-					<div class="img-container">
-						<img src="./assets/profile.jpg" alt="profile picture">
-					</div>
-					<div class="about-text">
-						<h2>About me</h2>
-						<p> <span>Hi!</span> Nice to meet you and welcome to my portfolio site!</p>
+				<div class="wrapper aboutWrapper">
+					<h2>About me</h2>
+					<div class="aboutContentContainer">
+						<div class="img-container">
+							<img src="./assets/profile.jpg" alt="profile picture">
+						</div>
+						<div class="about-text">
+							<p> <span>Hi!</span> Nice to meet you and welcome to my portfolio!</p>
 							
-						<p>I'm Clement Sung, a web developer from Toronto, Canada. I have a background in chemistry and have worked as a quality analyst in both the cosmetics and pharmaceutical industries. I have a tact for identifying solutions to problems. I enjoy creating responsive, engaging, accessible web applications. </p>
-
-						<p>When I'm not coding, I enjoy watching anime, playing video games and supporting Liverpool Football club! YNWA🔴</p>
-
-						<p> Feel free to contact me!</p>
+							<p>I'm Clement Sung, a web developer from Toronto, Canada. I have a background in chemistry and have worked as a quality analyst in both the cosmetics and pharmaceutical industries. I have a tact for identifying solutions to problems. I enjoy creating responsive, engaging, accessible web applications.</p>
+							
+							<p>When I'm not coding, I enjoy watching anime, playing video games and supporting Liverpool Football club! YNWA🔴</p>
+							
+							<p>Feel free to contact me!</p>
+							<a href="#contact">Contact Me!</a>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -65,22 +69,31 @@
 			<section class="projects" id="projects">
 				<div class="wrapper">
 					<h2>Projects</h2>
-					<ul class="projects-grid">
+					<ul class="projectsGrid">
 						<li>
 							<a href="https://podcast-prioritizer.netlify.app/"><img
 									src="./assets/podcast-prioritizer.png"
 									alt="Screenshot of Podcast Prioritizer App"></a>
-							<p></p>
+									<div class="projectText">
+										<h3>Podcast Prioritizer</h3>
+										<p>App that shows a list of podcasts based on the user's travel time</p>
+									</div>
 						</li>
 						<li>
 							<a href="https://hikari-anime.netlify.app/"><img src="./assets/hikari-anime.jpg"
 									alt="Screenshot of Hikari Anime App"></a>
-							<p></p>
+							<div class="projectText">
+								<h3>Hikari</h3>
+								<p>An anime database app that shows popular Anime shows and movies</p>
+							</div>
 						</li>
 						<li>
 							<a href="https://cratedigger-io.github.io/cratediggers.io/"><img
-									src="./assets/cratediggers.mp4" alt=""></a>
-							<p></p>
+									src="./assets/cratedigger.jpg" alt="screenshot of Cratedigger App"></a>
+							<div class="projectText">
+								<h3>Cratedigger</h3>
+								<p></p>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -89,33 +102,33 @@
 			<section class="skills" id="skills">
 				<div class="wrapper">
 					<h2>Skills</h2>
-					<ul class="skills-grid">
+					<ul class="skillsGrid">
 						<li>
-							<i class="devicon-html5-plain-wordmark colored devicon"></i>
+							<i class="devicon-html5-plain-wordmark colored" aria-hidden="true"></i>
 							<p>HTML</p>
 						</li>
 						<li>
-							<i class="devicon-css3-plain-wordmark colored devicon"></i>
+							<i class="devicon-css3-plain-wordmark colored" aria-hidden="true"></i>
 							<p>CSS</p>
 						</li>
 						<li>
-							<i class="devicon-javascript-plain colored devicon"></i>
+							<i class="devicon-javascript-plain colored" aria-hidden="true"></i>
 							<p>Javascript</p>
 						</li>
 						<li>
-							<i class="devicon-react-original-wordmark colored devicon "></i>
+							<i class="devicon-react-original-wordmark colored" aria-hidden="true"></i>
 							<p>React</p>
 						</li>
 						<li>
-							<i class="devicon-sass-original colored devicon"></i>
+							<i class="devicon-sass-original colored" aria-hidden="true"></i>
 							<p>Sass</p>
 						</li>
 						<li>
-							<i class="devicon-firebase-plain colored devicon"></i>
+							<i class="devicon-firebase-plain colored" aria-hidden="true"></i>
 							<p>Firebase</p>
 						</li>
 						<li>
-							<i class="devicon-git-plain colored"></i>
+							<i class="devicon-git-plain colored" aria-hidden="true"></i>
 							<p>Git</p>
 						</li>
 						<li>
@@ -129,25 +142,33 @@
 			<section class="contact" id="contact">
 				<div class="wrapper">
 					<h2>Contact</h2>
-					<form action="" method="post" class="contact-form">
-						<label for="name" class="sr-only"></label>
-						<input name="name" id="name" placeholder="Name" type="text">
-						<label for="" class="sr-only"></label>
-						<input name="email" id="email" placeholder="Email" type="email">
-						<label for="subject" class="sr-only"></label>
-						<input name="subject" id="subject" placeholder="Subject" type="text">
-						<label for="message" class="sr-only"></label>
-						<textarea name="message" id="message" cols="30" rows="10" required=""></textarea>
-					</form>
+					<div class="contactContainer">
+						<p>Feel free to send me an email at <a href="mailto:clement.sung7@gmail.com">clement.sung7@gmail.com</a> or book
+							an appointment through my <a href="https://calendly.com/clementsung/meeting">calendly</a> if forms aren't your thing.
+						</p>
+						<form action="https://formspree.io/f/xnqldonw" method="post" class="contactForm">
+							<label for="name" class="srOnly"></label>
+							<input class="formName" name="name" id="name" placeholder="Name" type="text" autocomplete="off" >
+							<label for="" class="srOnly"></label>
+							<input class="formEmail" name="email" id="email" placeholder="Email" type="email" autocomplete="off">
+							<label for="subject" class="srOnly"></label>
+							<input name="subject" id="subject" placeholder="Subject" type="text" autocomplete="off">
+							<label for="message" class="srOnly"></label>
+							<textarea name="message" id="message" cols="30" rows="10" required="" overflow-y="true"></textarea>
+							<button type="submit" class="submit-button">Submit</button>
+						</form>
+					</div>
+					
 				</div>
 			</section>
 		</main>
 		<!-- ================================Footer Section =========================-->
 		<footer>
 			<div>
-				Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+				Favicon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
 					href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-			</div>
+				</div>
+					<div>Icons from <a href="https://devicon.dev/">Devicon</a></div>
 		</footer>
 	</div>
 </body>

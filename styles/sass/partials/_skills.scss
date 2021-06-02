@@ -2,7 +2,7 @@
 	height: 100vh;
 }
 
-.skills-grid{ 
+.skillsGrid{ 
 	display:grid;
 	grid-template-columns: repeat(4,1fr);
 	grid-template-rows: repeat(2, 1fr );

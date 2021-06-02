@@ -3,23 +3,20 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
+	text-align: center;
 }
 
-.hero-overlay{
+.heroOverlay {
 	background-color: #000;
 	opacity: 0.7;
 	height: 100%;
 }
 
-.hero-wrapper{
-	display:flex;
+.heroWrapper {
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 }
 
-.home h2{
-	// animation: typing 2s steps(40, end), caret 0.75s step-end infinite;
-
-}

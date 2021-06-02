@@ -1,13 +1,19 @@
 .about{
-	height:100vh;
+	min-height:100vh;
 }
 
-.about-wrapper{
+.aboutWrapper{
 	display:flex;
+	flex-direction: column;
+}
+
+.aboutContentContainer{
+	display: flex;
 }
 
 .about img{
-	// border-radius: 50%;
+	border: 5px solid #6610f2;
+	border-radius: 50%;
 	flex-basis: 40%;
 	width:100%
 }
@@ -20,4 +26,11 @@
 
 .about p{
 	line-height: 2.2;
+	padding: 0 3rem;
+}
+
+.about a{
+	background-color: #6610f2;
+	margin-left: 3rem;
+	padding: 10px 50px;
 }
