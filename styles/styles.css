@@ -539,14 +539,9 @@ h2 {
   padding-bottom: 6rem;
 }
 
-.skillsGrid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  gap: 2.5rem;
+.skills i {
+  font-size: 4rem;
+  padding: 2rem 0;
 }
 
 .skills li {
@@ -567,9 +562,14 @@ h2 {
   border-radius: 15%;
 }
 
-.skills i {
-  font-size: 4rem;
-  padding: 2rem 0;
+.skillsGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 2.5rem;
 }
 
 .contact {
@@ -781,6 +781,9 @@ footer a {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .contact p {
+    padding: 0;
+  }
 }
 
 @media (max-width: 900px) {
@@ -802,5 +805,17 @@ footer a {
   .contact p {
     max-width: initial;
     text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .socialLinks i {
+    font-size: 1.2rem;
+  }
+  .linksContainer .logo {
+    font-size: 1.2rem;
+  }
+  .contactForm {
+    width: 100%;
   }
 }

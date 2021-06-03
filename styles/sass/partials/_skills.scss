@@ -1,6 +1,18 @@
 .skills{
 	min-height: 100vh;
 	padding-bottom: 6rem;
+	i{
+		font-size: 4rem;
+		padding: 2rem 0;
+	}
+	li{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border: 2px solid #6610f2;
+		border-radius: 15%;
+	}
 }
 
 .skillsGrid{ 
@@ -11,16 +23,3 @@
 	
 }
 
-.skills li{
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid #6610f2;
-	border-radius: 15%;
-}
-
-.skills i{
-	font-size: 4rem;
-	padding: 2rem 0;
-}
