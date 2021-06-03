@@ -328,7 +328,16 @@ h2 {
           align-items: center;
 }
 
-.linksContainer i {
+.socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fa-bars {
   display: none;
 }
 
@@ -382,6 +391,51 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+}
+
+.hero i {
+  font-size: 4rem;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  50% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  50% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
 }
 
 .about {
@@ -696,7 +750,17 @@ footer a {
     display: inline-block;
     font-size: 2rem;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 1rem;
+  }
+  .socialLinks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+  .socialLinks a {
+    margin: 0;
   }
   .activeNavbar {
     display: inline;
@@ -716,5 +780,27 @@ footer a {
   .skillsGrid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .projectsGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactForm {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 80%;
+  }
+  .contact p {
+    max-width: initial;
+    text-align: center;
   }
 }

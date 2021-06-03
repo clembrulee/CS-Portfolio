@@ -33,7 +33,12 @@
 	
 }
 
-.linksContainer i{
+.socialLinks{
+	display: flex;
+	justify-content: center;
+}
+
+.fa-bars{
 	display: none;
 }
 
