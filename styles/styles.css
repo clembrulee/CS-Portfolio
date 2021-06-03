@@ -372,7 +372,7 @@ h2 {
 
 .hero i {
   position: relative;
-  bottom: -150px;
+  bottom: -120px;
   font-size: 4rem;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
@@ -460,6 +460,10 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.about h2 {
+  margin-bottom: 0;
 }
 
 .about img {
@@ -588,6 +592,22 @@ h2 {
   padding-bottom: 6rem;
 }
 
+.contact a {
+  color: #6610f2;
+  font-size: 1.5rem;
+}
+
+.contact a:hover,
+.contact a:focus {
+  opacity: 0.5;
+}
+
+.contact p {
+  padding-right: 3rem;
+  line-height: 2.2;
+  max-width: 400px;
+}
+
 .contactForm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,6 +632,11 @@ textarea {
   border: 1px solid #6610f2;
 }
 
+textarea {
+  resize: none;
+  width: 100%;
+}
+
 .formName,
 .formEmail {
   width: calc(50% - 3rem);
@@ -624,11 +649,6 @@ textarea {
   display: flex;
 }
 
-textarea {
-  resize: none;
-  width: 100%;
-}
-
 .submitButton {
   display: block;
   color: #eff0f0;
@@ -638,6 +658,7 @@ textarea {
   border: none;
   margin-bottom: 2rem;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .submitButton:hover,
@@ -645,24 +666,23 @@ textarea {
   background: #4d00ca;
 }
 
-.contact a {
-  color: #6610f2;
-  font-size: 1.5rem;
-}
-
-.contact a:hover,
-.contact a:focus {
-  opacity: 0.5;
-}
-
-.contact p {
-  padding-right: 3rem;
-  line-height: 2.2;
-  max-width: 400px;
-}
-
 .formSubject {
   width: 100%;
+}
+
+.returnToTop {
+  position: relative;
+  bottom: 5%;
+  left: 90%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.contact i {
+  font-size: 4rem;
+  opacity: 0.5;
+  color: #eff0f0;
 }
 
 footer {
@@ -826,13 +846,29 @@ footer a:hover {
 }
 
 @media (max-width: 700px) {
+  .hero i {
+    bottom: 0;
+  }
   .socialLinks i {
     font-size: 1.2rem;
   }
   .linksContainer .logo {
     font-size: 1.2rem;
+    padding: 0.5rem 0;
+  }
+  .linksContainer div .socialLinks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .contactForm {
     width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .socialLinks i {
+    font-size: 1.2rem;
+    padding: 0.2rem;
   }
 }

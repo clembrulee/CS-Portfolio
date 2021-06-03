@@ -116,6 +116,10 @@
 }
 
 @media (max-width:700px){
+	.hero i{
+		bottom: 0;
+	}
+
 	.socialLinks i{
 		font-size: 1.2rem;
 	}
@@ -123,10 +127,21 @@
 	.linksContainer {
 		.logo{
 			font-size: 1.2rem;
+			padding: 0.5rem 0;
+		}
+		div .socialLinks{
+			justify-content: center;
 		}
 	}
 
 	.contactForm{
 		width: 100%;
+	}
+}
+
+@media (max-width: 500px){
+	.socialLinks i{
+		font-size: 1.2rem;
+		padding: 0.2rem;
 	}
 }
