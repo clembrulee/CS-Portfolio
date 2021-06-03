@@ -306,6 +306,11 @@ h2 {
   display: inline-block;
 }
 
+.sideHeader .logo {
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
 .sideHeader a:active,
 .sideHeader a:focus,
 .sideHeader a:hover {
@@ -357,17 +362,22 @@ h2 {
           align-items: center;
 }
 
-.sideHeader .logo {
-  font-size: 2rem;
-  margin-top: 4rem;
-}
-
 .hero {
   background-image: url("../assets/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   text-align: center;
+}
+
+.hero i {
+  position: relative;
+  bottom: -150px;
+  font-size: 4rem;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .heroOverlay {
@@ -393,19 +403,9 @@ h2 {
   height: 100vh;
 }
 
-.hero i {
-  font-size: 4rem;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
 .bounce {
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  -webkit-animation: bounce, ease;
+          animation: bounce, ease;
 }
 
 @-webkit-keyframes bounce {
@@ -486,6 +486,7 @@ h2 {
   background-color: #6610f2;
   margin-left: 3rem;
   padding: 10px 50px;
+  border-radius: 5px;
 }
 
 .about .imgContainer {
@@ -498,7 +499,7 @@ h2 {
 
 .about a:hover,
 .about a:focus {
-  opacity: 0.5;
+  background-color: #4d00ca;
 }
 
 .aboutText {
@@ -512,6 +513,11 @@ h2 {
   padding-bottom: 6rem;
 }
 
+.projects img {
+  width: 100%;
+  height: auto;
+}
+
 .projectsGrid {
   display: -ms-grid;
   display: grid;
@@ -520,14 +526,13 @@ h2 {
   gap: 2rem;
 }
 
-.projects img {
-  width: 100%;
-  height: auto;
-}
-
 .projectText a {
   font-size: 1.2rem;
   color: #6610f2;
+}
+
+.projectText a:hover {
+  opacity: 0.5;
 }
 
 .projectText h3 {
@@ -542,6 +547,11 @@ h2 {
 .skills i {
   font-size: 4rem;
   padding: 2rem 0;
+}
+
+.skills i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .skills li {
@@ -619,7 +629,7 @@ textarea {
   width: 100%;
 }
 
-.submit-button {
+.submitButton {
   display: block;
   color: #eff0f0;
   margin: 0 auto;
@@ -630,10 +640,9 @@ textarea {
   border-radius: 5px;
 }
 
-.submit-button:hover,
-.submit-button:focus {
-  background: #6610f2;
-  opacity: 0.8;
+.submitButton:hover,
+.submitButton:focus {
+  background: #4d00ca;
 }
 
 .contact a {
@@ -656,13 +665,21 @@ textarea {
   width: 100%;
 }
 
+footer {
+  margin: 2rem 0;
+}
+
 footer div {
-  margin: 2rem auto;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 footer a {
   color: #6610f2;
+}
+
+footer a:hover {
+  opacity: 0.5;
 }
 
 @media (max-width: 1280px) {

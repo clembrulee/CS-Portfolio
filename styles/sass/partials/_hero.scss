@@ -4,6 +4,13 @@
 	background-size: cover;
 	height: 100vh;
 	text-align: center;
+	i{
+		position: relative;
+		bottom: -150px;
+		font-size: 4rem;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+	}
 }
 
 .heroOverlay {
@@ -20,15 +27,8 @@
 	height: 100vh;
 }
 
-.hero i{
-	font-size: 4rem;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-}
-
 .bounce{
-	animation-name: bounce;
-	animation-timing-function: linear;
+	animation: bounce, ease;
 }
 
 @keyframes bounce{

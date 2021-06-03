@@ -6,17 +6,19 @@
 	left: 0;
 	top: 0;
 	border-right: 3px solid #6610f2;
-}
-
-.sideHeader li{
-	display: block;
-}
-
-.sideHeader a{
-	padding: 10px 0;
-	margin: 10px auto;
-	text-align: center;
-	display: inline-block;
+	li{
+		display: block;
+	}
+	a{
+		padding: 10px 0;
+		margin: 10px auto;
+		text-align: center;
+		display: inline-block;
+	}
+	.logo{
+		font-size:2rem;
+		margin-top: 4rem;
+	}
 }
 
 .sideHeader a:active,
@@ -49,8 +51,5 @@
 	align-items: center;
 }
 
-.sideHeader .logo{
-	font-size:2rem;
-	margin-top: 4rem;
-}
+
 

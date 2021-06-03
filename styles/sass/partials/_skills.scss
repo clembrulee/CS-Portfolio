@@ -5,6 +5,10 @@
 		font-size: 4rem;
 		padding: 2rem 0;
 	}
+	i:hover{
+		transform:rotate(360deg)
+	}
+
 	li{
 		display:flex;
 		flex-direction: column;

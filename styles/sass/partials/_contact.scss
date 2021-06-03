@@ -37,7 +37,7 @@ textarea{
 	width: 100%;
 }
 
-.submit-button{
+.submitButton{
 	display: block;
 	color:#eff0f0;
 	margin:0 auto;
@@ -48,10 +48,9 @@ textarea{
 	border-radius: 5px;
 }
 
-.submit-button:hover,
-.submit-button:focus{
-	background:#6610f2;
-	opacity: 0.8;
+.submitButton:hover,
+.submitButton:focus{
+	background:#4d00ca;
 }
 
 .contact a{
