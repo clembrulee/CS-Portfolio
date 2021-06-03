@@ -1,12 +1,11 @@
 .sideHeader{
 	background-color: #111418;
 	height: 100vh;
-	right:auto;
 	width:280px;
 	position: fixed;
 	left: 0;
 	top: 0;
-	border-right:3px solid #6610f2;
+	border-right: 3px solid #6610f2;
 }
 
 .sideHeader li{
@@ -26,6 +25,18 @@
 	color: #6610f2;
 }
 
+.linksContainer{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.linksContainer i{
+	display: none;
+}
+
 .navbar{
 	display: flex;
 	flex-direction:column;
@@ -37,3 +48,4 @@
 	font-size:2rem;
 	margin-top: 4rem;
 }
+

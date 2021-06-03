@@ -1,6 +1,9 @@
 .projects{
 	min-height: 100vh;
+	background-color: #212529;
+	padding-bottom: 6rem;
 }
+
 .projectsGrid{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);

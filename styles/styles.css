@@ -288,7 +288,6 @@ h2 {
 .sideHeader {
   background-color: #111418;
   height: 100vh;
-  right: auto;
   width: 280px;
   position: fixed;
   left: 0;
@@ -311,6 +310,26 @@ h2 {
 .sideHeader a:focus,
 .sideHeader a:hover {
   color: #6610f2;
+}
+
+.linksContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.linksContainer i {
+  display: none;
 }
 
 .navbar {
@@ -367,7 +386,7 @@ h2 {
 
 .about {
   min-height: 100vh;
-  margin: 4rem 0;
+  padding-bottom: 6rem;
 }
 
 .aboutWrapper {
@@ -423,6 +442,11 @@ h2 {
       flex-basis: 40%;
 }
 
+.about a:hover,
+.about a:focus {
+  opacity: 0.5;
+}
+
 .aboutText {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
@@ -430,6 +454,8 @@ h2 {
 
 .projects {
   min-height: 100vh;
+  background-color: #212529;
+  padding-bottom: 6rem;
 }
 
 .projectsGrid {
@@ -455,7 +481,8 @@ h2 {
 }
 
 .skills {
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 6rem;
 }
 
 .skillsGrid {
@@ -493,6 +520,8 @@ h2 {
 
 .contact {
   min-height: 100vh;
+  background-color: #212529;
+  padding-bottom: 6rem;
 }
 
 .contactForm {
@@ -533,6 +562,7 @@ textarea {
 
 textarea {
   resize: none;
+  width: 100%;
 }
 
 .submit-button {
@@ -557,9 +587,15 @@ textarea {
   font-size: 1.5rem;
 }
 
+.contact a:hover,
+.contact a:focus {
+  opacity: 0.5;
+}
+
 .contact p {
   padding-right: 3rem;
   line-height: 2.2;
+  max-width: 400px;
 }
 
 .formSubject {
@@ -575,9 +611,110 @@ footer a {
   color: #6610f2;
 }
 
+@media (max-width: 1280px) {
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactForm {
+    -ms-flex-item-align: self-end;
+        -ms-grid-row-align: self-end;
+        align-self: self-end;
+  }
+}
+
 @media (max-width: 1100px) {
-  .side-header {
+  .contentWrapper {
+    margin-left: 0;
+  }
+  h2 {
+    margin-top: 6rem;
+  }
+  .stickyTop {
     position: -webkit-sticky;
     position: sticky;
+    z-index: 1000;
+  }
+  .linksContainer {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all  0.5s ease;
+    transition: all  0.5s ease;
+  }
+  .linksContainer div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sideHeader {
+    height: auto;
+    border-right: none;
+    margin: 0 auto;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 3px solid #6610f2;
+  }
+  .sideHeader .logo {
+    margin: 0;
+    padding: 1.5rem 0;
+  }
+  .sideHeader a {
+    margin: 1.5rem auto;
+  }
+  .navbar {
+    display: none;
+  }
+  .linksContainer i {
+    display: inline-block;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+  }
+  .activeNavbar {
+    display: inline;
+  }
+  .activeLinksContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutContentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skillsGrid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }

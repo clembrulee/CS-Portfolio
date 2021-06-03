@@ -1,5 +1,7 @@
 .contact{
 	min-height: 100vh;
+	background-color: #212529;
+	padding-bottom: 6rem;
 }
 
 .contactForm{
@@ -17,12 +19,12 @@ textarea{
 	margin: 1.5rem;
 	padding: 0.5rem;
 	border-radius: 5px;
-	border:1px solid #6610f2
+	border: 1px solid #6610f2
 }
 
 .formName,
 .formEmail{
-	width:calc(50% - 3rem);
+	width: calc(50% - 3rem);
 	display: inline-block;
 }
 
@@ -31,7 +33,8 @@ textarea{
 }
 
 textarea{
-	resize:none;
+	resize: none;
+	width: 100%;
 }
 
 .submit-button{
@@ -56,9 +59,15 @@ textarea{
 	font-size: 1.5rem;
 }
 
+.contact a:hover,
+.contact a:focus{
+	opacity: 0.5;
+}
+
 .contact p{
 	padding-right: 3rem;
 	line-height: 2.2;
+	max-width: 400px;
 }
 
 .formSubject{
