@@ -1,3 +1,7 @@
+.contact{
+	min-height: 100vh;
+}
+
 .contactForm{
 	display:flex;
 	flex-direction: row;
@@ -18,7 +22,7 @@ textarea{
 
 .formName,
 .formEmail{
-	width:calc(50% - 6rem);
+	width:calc(50% - 3rem);
 	display: inline-block;
 }
 
@@ -47,5 +51,16 @@ textarea{
 	opacity: 0.8;
 }
 
+.contact a{
+	color: #6610f2;
+	font-size: 1.5rem;
+}
 
+.contact p{
+	padding-right: 3rem;
+	line-height: 2.2;
+}
 
+.formSubject{
+	width: 100%;
+}

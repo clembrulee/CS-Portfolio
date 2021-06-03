@@ -367,6 +367,7 @@ h2 {
 
 .about {
   min-height: 100vh;
+  margin: 4rem 0;
 }
 
 .aboutWrapper {
@@ -383,6 +384,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about img {
@@ -401,13 +405,27 @@ h2 {
 
 .about p {
   line-height: 2.2;
-  padding: 0 3rem;
+  padding-left: 3rem;
+  margin-top: 0;
 }
 
 .about a {
   background-color: #6610f2;
   margin-left: 3rem;
   padding: 10px 50px;
+}
+
+.about .imgContainer {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.aboutText {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
 }
 
 .projects {
@@ -425,6 +443,15 @@ h2 {
 .projects img {
   width: 100%;
   height: auto;
+}
+
+.projectText a {
+  font-size: 1.2rem;
+  color: #6610f2;
+}
+
+.projectText h3 {
+  margin-top: 0;
 }
 
 .skills {
@@ -464,6 +491,10 @@ h2 {
   padding: 2rem 0;
 }
 
+.contact {
+  min-height: 100vh;
+}
+
 .contactForm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,7 +521,7 @@ textarea {
 
 .formName,
 .formEmail {
-  width: calc(50% - 6rem);
+  width: calc(50% - 3rem);
   display: inline-block;
 }
 
@@ -521,9 +552,27 @@ textarea {
   opacity: 0.8;
 }
 
+.contact a {
+  color: #6610f2;
+  font-size: 1.5rem;
+}
+
+.contact p {
+  padding-right: 3rem;
+  line-height: 2.2;
+}
+
+.formSubject {
+  width: 100%;
+}
+
 footer div {
   margin: 2rem auto;
   text-align: center;
+}
+
+footer a {
+  color: #6610f2;
 }
 
 @media (max-width: 1100px) {

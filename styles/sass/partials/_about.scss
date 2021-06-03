@@ -1,5 +1,6 @@
 .about{
 	min-height:100vh;
+	margin: 4rem 0;
 }
 
 .aboutWrapper{
@@ -9,6 +10,7 @@
 
 .aboutContentContainer{
 	display: flex;
+	justify-content: space-between;
 }
 
 .about img{
@@ -26,11 +28,21 @@
 
 .about p{
 	line-height: 2.2;
-	padding: 0 3rem;
+	padding-left: 3rem;
+	margin-top: 0;
 }
 
 .about a{
 	background-color: #6610f2;
 	margin-left: 3rem;
 	padding: 10px 50px;
+}
+
+.about .imgContainer{
+	align-self: center;
+	flex-basis: 40%;
+}
+
+.aboutText{
+	flex-basis: 60%;
 }
