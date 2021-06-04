@@ -491,6 +491,7 @@ h2 {
   margin-left: 3rem;
   padding: 10px 50px;
   border-radius: 5px;
+  display: inline-block;
 }
 
 .about .imgContainer {
@@ -499,6 +500,7 @@ h2 {
       align-self: center;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
+  margin: 2rem 0;
 }
 
 .about a:hover,
@@ -509,6 +511,10 @@ h2 {
 .aboutText {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
+}
+
+.resume {
+  margin-bottom: 1.5rem;
 }
 
 .projects {
@@ -833,6 +839,9 @@ footer a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .projects img {
+    width: 60%;
+  }
   .contactForm {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -852,6 +861,9 @@ footer a:hover {
   .socialLinks i {
     font-size: 1.2rem;
   }
+  .projects img {
+    width: 80%;
+  }
   .linksContainer .logo {
     font-size: 1.2rem;
     padding: 0.5rem 0;
@@ -869,6 +881,6 @@ footer a:hover {
 @media (max-width: 500px) {
   .socialLinks i {
     font-size: 1.2rem;
-    padding: 0.2rem;
+    padding: 0.5rem;
   }
 }

@@ -40,10 +40,12 @@
 		margin-left: 3rem;
 		padding: 10px 50px;
 		border-radius: 5px;
+		display: inline-block;
 	}
 	.imgContainer{
 		align-self: center;
 		flex-basis: 40%;
+		margin: 2rem 0;
 	}
 }
 
@@ -52,7 +54,10 @@
 	background-color:#4d00ca;
 }
 
-
 .aboutText{
 	flex-basis: 60%;
+}
+
+.resume{
+	margin-bottom: 1.5rem;
 }

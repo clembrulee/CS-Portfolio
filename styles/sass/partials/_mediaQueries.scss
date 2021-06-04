@@ -104,6 +104,10 @@
 		flex-direction: column;
 	}
 
+	.projects img{
+		width: 60%;
+	}
+
 	.contactForm{
 		align-self:center;
 		width: 80%;
@@ -124,6 +128,10 @@
 		font-size: 1.2rem;
 	}
 
+	.projects img{
+		width: 80%;
+	}
+
 	.linksContainer {
 		.logo{
 			font-size: 1.2rem;
@@ -142,6 +150,6 @@
 @media (max-width: 500px){
 	.socialLinks i{
 		font-size: 1.2rem;
-		padding: 0.2rem;
+		padding: 0.5rem;
 	}
 }
