@@ -145,11 +145,21 @@
 	.contactForm{
 		width: 100%;
 	}
+
+	.returnToTop{
+		bottom:-3%;
+		left: 85%;
+	}
 }
 
 @media (max-width: 500px){
 	.socialLinks i{
 		font-size: 1.2rem;
 		padding: 0.5rem;
+	}
+
+	.returnToTop{
+		bottom:-4%;
+		left: 80%;
 	}
 }
