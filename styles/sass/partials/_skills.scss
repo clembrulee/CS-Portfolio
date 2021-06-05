@@ -1,12 +1,12 @@
 .skills{
 	min-height: 100vh;
 	padding-bottom: 6rem;
+	h2{
+		margin-top:6rem;
+	}
 	i{
 		font-size: 4rem;
 		padding: 2rem 0;
-	}
-	i:hover{
-		transform:rotate(360deg)
 	}
 
 	li{
@@ -14,8 +14,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		border: 2px solid #6610f2;
-		border-radius: 15%;
 	}
 }
 

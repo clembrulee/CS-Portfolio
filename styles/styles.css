@@ -463,7 +463,7 @@ h2 {
 }
 
 .about h2 {
-  margin-bottom: 0;
+  margin-top: 6rem;
 }
 
 .about img {
@@ -478,10 +478,11 @@ h2 {
   font-size: 4rem;
   color: #6610f2;
   line-height: 1;
+  padding-left: 3rem;
 }
 
 .about p {
-  line-height: 2.2;
+  line-height: 1.6;
   padding-left: 3rem;
   margin-top: 0;
 }
@@ -523,6 +524,10 @@ h2 {
   padding-bottom: 6rem;
 }
 
+.projects h2 {
+  margin-top: 6rem;
+}
+
 .projects img {
   width: 100%;
   height: auto;
@@ -554,14 +559,13 @@ h2 {
   padding-bottom: 6rem;
 }
 
+.skills h2 {
+  margin-top: 6rem;
+}
+
 .skills i {
   font-size: 4rem;
   padding: 2rem 0;
-}
-
-.skills i:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
 }
 
 .skills li {
@@ -578,8 +582,6 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #6610f2;
-  border-radius: 15%;
 }
 
 .skillsGrid {
@@ -598,6 +600,10 @@ h2 {
   padding-bottom: 6rem;
 }
 
+.contact h2 {
+  margin-top: 6rem;
+}
+
 .contact a {
   color: #6610f2;
   font-size: 1.5rem;
@@ -610,7 +616,7 @@ h2 {
 
 .contact p {
   padding-right: 3rem;
-  line-height: 2.2;
+  line-height: 1.6;
   max-width: 400px;
 }
 
