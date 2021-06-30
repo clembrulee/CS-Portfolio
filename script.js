@@ -4,7 +4,8 @@ app.menu = document.querySelector('.fas')
 app.linksContainer = document.querySelector('.linksContainer')
 app.navbar = document.querySelector('.navbar')
 app.navLinks = document.querySelectorAll('.navLinks a')
-
+app.aboutSection = document.getElementById('about')
+app.currentScroll = window.pageYOffset;
 
 app.handleClick = () => {
 	app.linksContainer.classList.toggle('activeLinksContainer')
@@ -22,9 +23,15 @@ app.navClick = () => {
 	}) 
 }
 
+// app.handleScroll = () => {
+	
+// }
+
 app.init = () => {
 	app.menu.addEventListener('click', app.handleClick);
+	window.addEventListener('scroll', app.handleScroll)
 	app.navClick();
+	console.log(app.aboutSection)
 }
 
 app.init();
